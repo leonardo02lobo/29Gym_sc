@@ -4,21 +4,18 @@ body {
     padding: 0px;
     margin: 0px;
     background-color: #050315;
-    color: rgb(255 255 255);
-    ;
+    color: rgb(255 255 255);;
     font-size: 25px;
 }
 
-/* * {
-    padding: 0;
-    margin: 0;
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-    font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif;
-    font-size: 16px;
-} */
+
 h1 {
     margin-bottom: 0px;
+}
+
+h2 {
+    margin-top: 0px;
+    font-size: 50px;
 }
 
 h4 {
@@ -37,11 +34,11 @@ h4 {
     margin-left: 40px;
 }
 
-.titulo-presentacion {
+.presentacion {
     font-size: 90px;
     text-align: center;
-    margin-top: 1200px;
-    margin-bottom: 220px;
+    margin-top: 160px;
+    margin-bottom: 270px;
     font-family: 'DM Serif Text';
 }
 
@@ -57,18 +54,72 @@ nav {
 
 
 
-main {
+/* main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+} */
+
+
+
+.descripcion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    padding-left: 25px;
+    box-sizing: border-box;
+    background-color: #050315;
 }
+
+.texto {
+    flex: 3.5;
+    font-size: 20px;
+    /* border: 1px solid white; */
+    width: 500px;
+    height: 100%;
+    padding: 80px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+
+}
+
+.separador {
+    width: 40px;
+    height: 100%;
+    background-color: white;
+}
+
+.imagenDescripcion {
+    flex: 4;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+
+.imagenDescripcion img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 
 .horarios {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
     position: relative;
     width: 100%;
     height: auto;
@@ -142,11 +193,16 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 90vh;
+    background-color: white;
+    color: rgb(142 92 57);
+    padding-bottom: 20px;
+    box-sizing: border-box;
 }
 
 .planes h2 {
     margin: 20px;
-    font-size: 40px;
+    font-size: 70px;
 }
 
 .container-tarjetas {
@@ -160,18 +216,21 @@ main {
 .tarjeta {
     display: flex;
     flex-direction: column;
-    border: 2px solid white;
+    border: 4px solid rgb(142 92 57);
     margin: 20px;
     border-radius: 20px;
     padding: 20px;
     width: 80%;
     max-width: 247px;
-    min-height: 352px;
+    min-height: 455px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .tarjeta h3 {
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 30px;
 }
 
@@ -182,5 +241,5 @@ main {
 }
 
 .tarjeta:hover {
-    box-shadow: 0 0 10px 5px #FF6500;
+    box-shadow: 0 0 10px 5px rgb(142 92 57);
 }
