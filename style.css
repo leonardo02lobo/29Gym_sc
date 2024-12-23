@@ -1,23 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Rozha+One&display=swap');
 
-body{
+body {
     padding: 0px;
     margin: 0px;
-    background-color:#050315;
+    background-color: #050315;
     color: rgb(255 255 255);
     ;
     font-size: 25px;
 }
 
-h1{
+/* * {
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+} */
+h1 {
     margin-bottom: 0px;
 }
-h4{
+
+h4 {
     margin-top: 0px;
 }
 
 
-.paginas{
+.paginas {
     display: flex;
     gap: 35px;
     font-size: 15px;
@@ -28,15 +37,16 @@ h4{
     margin-left: 40px;
 }
 
-.titulo-presentacion{
+.titulo-presentacion {
     font-size: 90px;
     text-align: center;
-    margin-top: 160px;
+    margin-top: 1200px;
     margin-bottom: 220px;
     font-family: 'DM Serif Text';
 }
 
-nav{
+
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,8 +54,133 @@ nav{
     padding: 20px;
 }
 
-ul{
+
+
+
+main {
     display: flex;
-    list-style: none; 
-    padding-left: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.horarios {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.horarios::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('gym.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.horarios-dias {
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 2;
+}
+
+.horarios-dias h2 {
+    text-align: center;
+    margin: 70px;
+    background-color: transparent;
+    font-size: 40px;
+}
+
+.container-horario {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 20px;
+    flex-wrap: wrap;
+}
+
+.horario {
+
+    background-color: transparent;
+    margin: 20px;
+    flex: 1 1 30%;
+    box-sizing: border-box;
+}
+
+.horario h3,
+.horario p {
+    text-align: center;
+    margin: 10px;
+    background-color: transparent;
+    font-size: 30px;
+}
+
+.horario span {
+    font-size: 30px;
+    color: #FF6500;
+    background-color: transparent;
+}
+
+.planes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.planes h2 {
+    margin: 20px;
+    font-size: 40px;
+}
+
+.container-tarjetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 247px;
+    min-height: 352px;
+}
+
+.tarjeta h3 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.tarjeta strong {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.tarjeta:hover {
+    box-shadow: 0 0 10px 5px #FF6500;
 }
