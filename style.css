@@ -34,6 +34,17 @@ h4 {
     margin-left: 40px;
 }
 
+.paginas a{
+    color: white;
+    text-decoration: none;
+    transition-duration: .5s;
+}
+
+.paginas a:hover{
+    cursor: pointer;
+    color: #FF6500;
+}
+
 .presentacion {
     font-size: 90px;
     text-align: center;
@@ -57,16 +68,6 @@ nav {
     align-items: center;
     gap: 20px;
 }
-
-/* main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-} */
-
-
 
 .descripcion {
     display: flex;
@@ -359,4 +360,38 @@ footer {
     margin: 80px 0px;
     background-color: #000000;
     padding: 10px 0px;
+}
+
+.pagina-horarios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+}
+.pagina-horarios h1{
+    font-size: 50px;
+    margin: 50px;
+    color: #FF6500;
+}
+
+.alinear-boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.boton-reservar{
+    margin: 50px;
+    font-size: 20px;
+    background-color: #FF6500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+.boton-reservar:hover{
+    cursor: pointer;
+    background-color: #FF6500;
+    color: white;
 }
