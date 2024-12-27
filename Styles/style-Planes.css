@@ -1,4 +1,4 @@
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,17 +7,18 @@ main{
     height: 100vh;
 }
 
-.Planes-gym{
+.Planes-gym {
     content: '';
     position: absolute;
-    background-image: url('./Assets/gymfondo.jpg');
+    background-image: url('../Assets/gymfondo.jpg');
     background-size: cover;
     background-position: center;
     opacity: 0.8;
     z-index: 1;
 }
 
-.titulo-presentacion, .section-planes{
+.titulo-presentacion,
+.section-planes {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,12 +29,12 @@ main{
     text-align: center;
 }
 
-h3{
+h3 {
     color: #FF6500;
     margin: 10px;
     font-family: 'DM Serif Text';
 }
 
-.linea-plan{
+.linea-plan {
     border: 1px solid white;
 }

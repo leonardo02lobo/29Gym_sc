@@ -1,0 +1,37 @@
+.pagina-horarios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+
+.pagina-horarios h1 {
+    font-size: 50px;
+    margin: 50px;
+    color: black;
+}
+
+.alinear-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    height: 24vh;
+}
+
+.boton-reservar {
+    margin: 50px;
+    font-size: 20px;
+    background-color: #FF6500;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.boton-reservar:hover {
+    cursor: pointer;
+    background-color: #FF6500;
+    color: white;
+}

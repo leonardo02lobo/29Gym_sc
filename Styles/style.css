@@ -87,7 +87,6 @@ nav {
 .texto {
     flex: 3.5;
     font-size: 20px;
-    /* border: 1px solid white; */
     width: 500px;
     height: 100%;
     padding: 80px;
@@ -255,7 +254,6 @@ nav {
 }
 
 .tarjeta:hover {
-    /* box-shadow: 0 0 10px 5px rgb(142 92 57); */
     scale: 1.1;
 }
 
@@ -364,42 +362,4 @@ footer {
     margin: 80px 0px;
     background-color: #000000;
     padding: 10px 0px;
-}
-
-.pagina-horarios {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-
-}
-
-.pagina-horarios h1 {
-    font-size: 50px;
-    margin: 50px;
-    color: black;
-}
-
-.alinear-boton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-    height: 24vh;
-}
-
-.boton-reservar {
-    margin: 50px;
-    font-size: 20px;
-    background-color: #FF6500;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-}
-
-.boton-reservar:hover {
-    cursor: pointer;
-    background-color: #FF6500;
-    color: white;
 }
