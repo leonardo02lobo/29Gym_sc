@@ -10,7 +10,7 @@ main{
 .Planes-gym{
     content: '';
     position: absolute;
-    background-image: url('../Assets/gymfondo.jpg');
+    background-image: url('./Assets/gymfondo.jpg');
     background-size: cover;
     background-position: center;
     opacity: 0.8;

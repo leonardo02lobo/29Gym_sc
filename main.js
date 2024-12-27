@@ -1,5 +1,18 @@
-var boton = document.getElementById('WhatsApp');
+let botonwasa = []
 
-boton.addEventListener('click', function() {
-    window.open("https://wa.me/584247378479");
-});
+function iniciar() {
+    wasa()
+}
+
+function wasa() {
+    botonwasa = document.querySelectorAll('.BWasa') /*Solo funciona en class no en id*/
+
+    botonwasa.forEach(boton=>{
+        boton.addEventListener('click', function () {
+            window.open("https://wa.me/584247378479");
+        });
+    })
+  
+}
+
+window.addEventListener('load', iniciar)
