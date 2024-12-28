@@ -28,28 +28,6 @@ h4 {
     margin-top: 0px;
 }
 
-.paginas {
-    display: flex;
-    gap: 35px;
-    font-size: 15px;
-    font-family: 'DM Serif Text';
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-    margin-left: 40px;
-}
-
-.paginas a {
-    color: white;
-    text-decoration: none;
-    transition-duration: .5s;
-}
-
-.paginas a:hover {
-    cursor: pointer;
-    color: #FF6500;
-}
-
 .presentacion {
     font-size: 90px;
     text-align: center;
@@ -59,20 +37,6 @@ h4 {
 }
 
 
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.redes {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 20px;
-}
 
 .descripcion {
     display: flex;
@@ -109,7 +73,7 @@ nav {
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    background-image: url('../Assets/Balls.jpg');
+    background-image: url('../Assets/Balls.webp');
     background-attachment: fixed;
     background-size: 45%;
     background-position: right;
@@ -145,7 +109,7 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../Assets/gymfondo.jpg');
+    background-image: url('../Assets/gymfondo.webp');
     background-size: cover;
     background-position: center;
     opacity: 0.5;
