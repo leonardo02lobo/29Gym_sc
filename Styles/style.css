@@ -27,28 +27,6 @@ h4 {
     margin-top: 0px;
 }
 
-.paginas {
-    display: flex;
-    gap: 35px;
-    font-size: 15px;
-    font-family: 'DM Serif Text';
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-    margin-left: 40px;
-}
-
-.paginas a {
-    color: white;
-    text-decoration: none;
-    transition-duration: .5s;
-}
-
-.paginas a:hover {
-    cursor: pointer;
-    color: #FF6500;
-}
-
 .presentacion {
     font-size: 90px;
     text-align: center;
@@ -58,20 +36,6 @@ h4 {
 }
 
 
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.redes {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 20px;
-}
 
 .descripcion {
     display: flex;
@@ -108,7 +72,7 @@ nav {
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    background-image: url('../Assets/Balls.jpg');
+    background-image: url('../Assets/Balls.webp');
     background-attachment: fixed;
     background-size: 45%;
     background-position: right;
@@ -144,7 +108,7 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../Assets/gymfondo.jpg');
+    background-image: url('../Assets/gymfondo.webp');
     background-size: cover;
     background-position: center;
     opacity: 0.5;
@@ -268,98 +232,4 @@ nav {
     color: white;
     padding: 20px;
     box-sizing: border-box;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    background-color: #0B192C;
-    width: 100%;
-}
-
-.container-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 10vh;
-}
-
-.mapa {
-    width: 90%;
-}
-
-.mapa iframe {
-    height: 400px;
-    padding: 0px 50px;
-}
-
-.direccion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    width: 100%;
-    height: 100%;
-    font-size: 20px;
-    color: white;
-}
-
-.boton {
-    display: flex;
-    background-color: transparent;
-    color: white;
-    border: none;
-    font-size: 20px;
-    transition: .5s all;
-}
-
-.boton:hover {
-    color: #FF6500;
-    cursor: pointer;
-}
-
-.direccion .linea {
-    border: 2px solid white;
-    width: 100%;
-}
-
-.navegacion {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.navegacion ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 0px;
-}
-
-.navegacion ul li {
-    padding-bottom: 20px;
-    transition-duration: .3s;
-}
-
-.navegacion ul li:hover {
-    color: #FF6500;
-    cursor: pointer;
-}
-
-.nombre {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    text-align: center;
-    margin: 80px 0px;
-    background-color: #000000;
-    padding: 10px 0px;
 }

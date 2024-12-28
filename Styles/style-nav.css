@@ -1,0 +1,39 @@
+
+.paginas {
+    display: flex;
+    gap: 6%;
+    font-size: 50%;
+    font-family: 'DM Serif Text';
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+.paginas a {
+    color: white;
+    text-decoration: none;
+    transition-duration: .5s;
+}
+
+.paginas a:hover {
+    cursor: pointer;
+    color: #FF6500;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+    width: 100%;
+}
+
+.redes {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2%;
+    margin-right: 3%;
+}
