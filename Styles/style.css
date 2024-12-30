@@ -81,7 +81,7 @@ h4 {
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    background-image: url('../Assets/Balls.webp');
+    background-image: url('../Assets/fotoGym.webp');
     background-attachment: fixed;
     background-size: 45%;
     background-position: right;
@@ -330,24 +330,22 @@ h4 {
         align-items: center;
     }
 
-    .texto p {
+    .texto p, .texto h2{
         width: 75%;
         text-align: center;
         font-size: 50%;
         overflow: hidden;
     }
-
-    .separador {
-        width: 100%;
-        height: 40px;
-        background-color: white;
+    .texto h2{
+        font-size: 200%;
     }
 
     .imagenDescripcion {
         width: 100%;
-        height: 100%;
-        background-image: url('../Assets/Balls.webp');
+        height: 70vh;
+        background-image: url('../Assets/fotoGym.webp');
         background-attachment: fixed;
+        background-repeat: no-repeat;
         background-size: 45%;
         background-position: right;
     }
