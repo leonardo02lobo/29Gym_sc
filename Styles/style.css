@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Rozha+One&display=swap');
 
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Evita el desbordamiento horizontal */
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -29,7 +37,7 @@ h4 {
 }
 
 .presentacion {
-    font-size: 350%;
+    font-size: 90px;
     text-align: center;
     margin-top: 160px;
     margin-bottom: 270px;
@@ -51,7 +59,7 @@ h4 {
 
 .texto {
     flex: 3.5;
-    font-size: 100%;
+    font-size: 20px;
     width: 500px;
     height: 100%;
     padding: 80px;
@@ -222,81 +230,70 @@ h4 {
     scale: 1.1;
 }
 
-.vistas {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.contenedor-vistas {
     width: 100%;
-    height: 120vh;
-    background-color: #050315;
-    color: white;
+    overflow-x: hidden;
+}
+
+.promocion {
+    height: 118vh;
 }
 
 #tituloPromocion {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
     font-size: 50px;
-    margin: 80px;
 }
 
-#imagenPromocional {
-    position: relative;
-    flex: 4;
+.vistas {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
-    height: 100%;
-    transition: opacity 0.5s ease;
+    height: 100vh;
+    background-color: #050315;
+    color: white;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+    scrollbar-width: none;
+    /* Oculta la barra de desplazamiento en Firefox */
 }
 
-#imagenPromocional img {
-    width: auto;
-    height: 90%;
+.vistas::-webkit-scrollbar {
+    display: none;
+    /* Oculta la barra de desplazamiento en Chrome, Safari y Opera */
 }
 
-#imagenPromocional:hover {
-    opacity: 0.7;
-}
-
+#imagenPromocional,
 #videoPromocional {
     position: relative;
-    flex: 4;
+    flex: 0 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 800px;
     height: 100%;
     transition: opacity 0.5s ease;
+    scroll-snap-align: start;
 }
 
-#imagenPromocional:hover::after {
-    content: "Texto centrado";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 20px;
-    background-color: transparent;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-
+#imagenPromocional img,
 #videoPromocional video {
     width: auto;
-    height: 90%;
+    height: 100%;
 }
 
+#imagenPromocional:hover,
 #videoPromocional:hover {
     opacity: 0.7;
 }
 
+#imagenPromocional:hover::after,
 #videoPromocional:hover::after {
     content: "Texto centrado";
     position: absolute;
