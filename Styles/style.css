@@ -383,6 +383,11 @@ h4 {
         font-size: 100%;
     }
 
+    .horarios-dias h2{
+        font-size: 50px;
+        margin: 20px 20px;
+    }
+
     #tituloPromocion {
         display: flex;
         justify-content: center;
