@@ -96,10 +96,15 @@ footer {
     .container-footer {
         flex-direction: column;
     }
+    .mapa {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     .mapa iframe {
         height: 200px;
-        padding: 0px 100px;
         width: 200px;
     }
 
