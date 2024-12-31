@@ -317,7 +317,7 @@ h4 {
     border-radius: 5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .presentacion {
         font-size: 200%;
         margin: 40% 0%;
@@ -364,7 +364,7 @@ h4 {
         background-size: 45%;
         background-position: right;
         width: 100%;
-        height: 300px; /* Asegúrate de que tenga una altura definida */
+        height: 300px; 
     }
 
     .texto {
