@@ -9,7 +9,7 @@ function wasa() {
 
     botonwasa.forEach(boton=>{
         boton.addEventListener('click', function () {
-            window.open("https://wa.me/584247378479");
+            window.open("https://wa.me/584247842240");
         });
     })
   

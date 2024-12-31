@@ -101,6 +101,9 @@ h4 {
     bottom: 0;
 }
 
+.imagenDescripcionResponsive {
+    display: none; /* Oculta la imagen por defecto */
+}
 
 .horarios {
     display: flex;
@@ -270,32 +273,39 @@ h4 {
 }
 
 #imagenPromocional,
-#videoPromocional {
+#videoPromocional,
+#imagenPromocional2,
+#videoPromocional3 {
     position: relative;
     flex: 0 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 800px;
+    width: 600px;
     height: 100%;
     transition: opacity 0.5s ease;
     scroll-snap-align: start;
 }
 
 #imagenPromocional img,
-#videoPromocional video {
+#videoPromocional video,
+#imagenPromocional2 img,
+#videoPromocional3 video {
     width: auto;
     height: 100%;
 }
 
 #imagenPromocional:hover,
-#videoPromocional:hover {
+#videoPromocional:hover,
+#imagenPromocional2:hover,
+#videoPromocional3:hover {
     opacity: 0.7;
 }
 
 #imagenPromocional:hover::after,
-#videoPromocional:hover::after {
-    content: "Texto centrado";
+#videoPromocional:hover::after,
+#imagenPromocional2:hover::after,
+#videoPromocional3:hover::after {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -315,9 +325,46 @@ h4 {
 
     .descripcion {
         display: flex;
-        flex-direction: row;
+        flex-direction: column; /* Cambia a columna para que .texto ocupe todo el ancho */
         height: auto;
         padding: 0%;
+    }
+
+    .imagenDescripcion {
+        display: none; /* Elimina la imagen de fondo y oculta el contenedor */
+    }
+
+    .imagenDescripcionResponsive {
+        display: block; /* Asegura que se muestre en el modo responsive */
+        width: 100%; /* Asegura que ocupe todo el ancho */
+        margin-bottom: -6px; /* Espacio debajo de la imagen */
+    }
+
+    .imagenDescripcionResponsive img {
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    .texto {
+        width: 100%; /* Asegura que ocupe todo el ancho */
+        padding: 1%;
+        margin-right: 0%;
+        margin-bottom: 10%;
+        font-size: 150%;
+    }
+
+    .imagenDescripcion {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        position: relative;
+        background-image: none; /* Elimina la imagen de fondo */
+        background-attachment: fixed;
+        background-size: 45%;
+        background-position: right;
+        width: 100%;
+        height: 300px; /* Asegúrate de que tenga una altura definida */
     }
 
     .texto {
