@@ -318,6 +318,7 @@ h4 {
 }
 
 @media (max-width: 480px) {
+
     .presentacion {
         font-size: 200%;
         margin: 40% 0%;
@@ -393,7 +394,7 @@ h4 {
         overflow: hidden;
     }
     .texto h2{
-        font-size: 200%;
+        font-size: 150%;
     }
 
     .imagenDescripcion {
@@ -413,11 +414,13 @@ h4 {
 
     .planes h2 {
         font-size: 150%;
+        text-align: center;
     }
 
     .container-tarjetas {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        font-size: 20px;
         /* 2 columnas de igual tamaño */
         grid-auto-rows: auto;
         /* Filas automáticas */
