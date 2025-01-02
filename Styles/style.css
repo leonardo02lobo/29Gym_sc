@@ -450,5 +450,13 @@ h4 {
         align-items: center;
         width: 100%;
         margin: 20px 0px;
+        strong{
+            font-size: 30px;  
+        }
+        
+    }
+
+    .direccion p{
+        text-align: center;
     }
 }
