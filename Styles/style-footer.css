@@ -80,6 +80,14 @@ footer {
     color: #FF6500;
     cursor: pointer;
 }
+.paginas2 a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
 
 .nombre {
     display: flex;
