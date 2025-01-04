@@ -102,7 +102,8 @@ h4 {
 }
 
 .imagenDescripcionResponsive {
-    display: none; /* Oculta la imagen por defecto */
+    display: none;
+    /* Oculta la imagen por defecto */
 }
 
 .horarios {
@@ -317,37 +318,49 @@ h4 {
     border-radius: 5px;
 }
 
+.paginas2 a{
+    text-decoration: none; 
+    color: inherit; 
+}
+
 @media (max-width: 480px) {
 
     .presentacion {
         font-size: 200%;
-        margin: 40% 0%;
+        margin: 69% 0%;
     }
 
     .descripcion {
         display: flex;
-        flex-direction: column; /* Cambia a columna para que .texto ocupe todo el ancho */
+        flex-direction: column;
         height: auto;
         padding: 0%;
     }
 
     .imagenDescripcion {
-        display: none; /* Elimina la imagen de fondo y oculta el contenedor */
+        display: none;
+        /* Elimina la imagen de fondo y oculta el contenedor */
     }
 
     .imagenDescripcionResponsive {
-        display: block; /* Asegura que se muestre en el modo responsive */
-        width: 100%; /* Asegura que ocupe todo el ancho */
-        margin-bottom: -6px; /* Espacio debajo de la imagen */
+        display: block;
+        /* Asegura que se muestre en el modo responsive */
+        width: 100%;
+        /* Asegura que ocupe todo el ancho */
+        margin-bottom: -6px;
+        /* Espacio debajo de la imagen */
     }
 
     .imagenDescripcionResponsive img {
-        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-        height: auto; /* Mantiene la proporción de la imagen */
+        width: 100%;
+        /* Asegura que la imagen ocupe todo el ancho del contenedor */
+        height: auto;
+        /* Mantiene la proporción de la imagen */
     }
 
     .texto {
-        width: 100%; /* Asegura que ocupe todo el ancho */
+        width: 100%;
+        /* Asegura que ocupe todo el ancho */
         padding: 1%;
         margin-right: 0%;
         margin-bottom: 10%;
@@ -360,12 +373,13 @@ h4 {
         justify-content: flex-end;
         align-items: flex-start;
         position: relative;
-        background-image: none; /* Elimina la imagen de fondo */
+        background-image: none;
+        /* Elimina la imagen de fondo */
         background-attachment: fixed;
         background-size: 45%;
         background-position: right;
         width: 100%;
-        height: 300px; 
+        height: 300px;
     }
 
     #tituloPromocion {
@@ -387,14 +401,19 @@ h4 {
         align-items: center;
     }
 
-    .texto p, .texto h2{
-        width: 75%;
-        text-align: center;
+    .texto p,
+    .texto h2 {
+        width: 85%;
+        text-align: start;
         font-size: 50%;
         overflow: hidden;
+        padding: 10px;
+        box-sizing: border-box;
     }
-    .texto h2{
+
+    .texto h2 {
         font-size: 200%;
+        text-align: center;
     }
 
     .imagenDescripcion {
@@ -407,25 +426,30 @@ h4 {
         background-position: right;
     }
 
-    .container-tarjetas{
-        flex-direction: column;
-        align-items: center;
-    }
-     .planes {
+    .planes {
         height: auto;
         width: 100%;
     }
 
     .planes h2 {
         font-size: 150%;
+        text-align: center;
     }
 
     .container-tarjetas {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        font-size: 20px;
         /* 2 columnas de igual tamaño */
         grid-auto-rows: auto;
         /* Filas automáticas */
+    }
+
+    .paginas2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .tarjeta {
@@ -439,15 +463,9 @@ h4 {
     .tarjeta h3,
     .tarjeta strong {
         font-size: 100%;
-        margin: 0px;
     }   
-    .linea-plan {
-        display: block;
-        border: 1px solid rgb(0, 0, 0);
-        width: 90%;
-    } 
 
-    .horarios-dias h2{
+    .horarios-dias h2 {
         font-size: 50px;
         margin: 20px 20px;
     }
@@ -457,6 +475,63 @@ h4 {
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin: 20px 0px;
+        margin-top: 10%;
+        margin-bottom: 0%;
     }
+
+    .vistas {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 85vh;
+        background-color: #050315;
+        color: white;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        gap: 40px;
+        padding: 20px;
+        box-sizing: border-box;
+        scrollbar-width: none;
+        /* Oculta la barra de desplazamiento en Firefox */
+    }
+
+    .promocion {
+        height: 95vh;
+    }
+
+    #imagenPromocional,
+    #videoPromocional,
+    #imagenPromocional2,
+    #videoPromocional3 {
+        position: relative;
+        flex: 0 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 410px;
+        height: 100%;
+        transition: opacity 0.5s ease;
+        scroll-snap-align: start;
+    }
+
+    #imagenPromocional img,
+    #videoPromocional video,
+    #imagenPromocional2 img,
+    #videoPromocional3 video {
+        width: auto;
+        height: 77%;
+    }
+
+    .direccion{
+    justify-content: center;
+    text-align: center;
+    }
+
+    #WhatsApp{
+    justify-content: center;
+    text-align: center;
+    }
+
 }
