@@ -471,8 +471,7 @@ h4 {
     }
 
     #tituloPromocion {
-        display: flex
-;
+        display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -525,14 +524,14 @@ h4 {
         height: 77%;
     }
 
- .direccion{
+    .direccion{
     justify-content: center;
     text-align: center;
- }
+    }
 
- #WhatsApp{
+    #WhatsApp{
     justify-content: center;
     text-align: center;
- }
+    }
 
 }
