@@ -324,6 +324,7 @@ h4 {
 }
 
 @media (max-width: 480px) {
+
     .presentacion {
         font-size: 200%;
         margin: 69% 0%;
@@ -432,11 +433,13 @@ h4 {
 
     .planes h2 {
         font-size: 150%;
+        text-align: center;
     }
 
     .container-tarjetas {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        font-size: 20px;
         /* 2 columnas de igual tamaño */
         grid-auto-rows: auto;
         /* Filas automáticas */
@@ -460,7 +463,7 @@ h4 {
     .tarjeta h3,
     .tarjeta strong {
         font-size: 100%;
-    }
+    }   
 
     .horarios-dias h2 {
         font-size: 50px;
