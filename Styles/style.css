@@ -316,6 +316,12 @@ h4 {
     padding: 10px;
     border-radius: 5px;
 }
+.info{
+    display: none;
+}
+.linea-plan{
+    display: none;
+}
 
 @media (max-width: 480px) {
 
@@ -407,7 +413,11 @@ h4 {
         background-position: right;
     }
 
-    .planes {
+    .container-tarjetas{
+        flex-direction: column;
+        align-items: center;
+    }
+     .planes {
         height: auto;
         width: 100%;
     }
@@ -415,29 +425,57 @@ h4 {
     .planes h2 {
         font-size: 150%;
         text-align: center;
+        margin: 10px;
     }
-
-    .container-tarjetas {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        font-size: 20px;
-        /* 2 columnas de igual tamaño */
-        grid-auto-rows: auto;
-        /* Filas automáticas */
-    }
-
     .tarjeta {
-        width: 100%;
-        max-width: 60%;
-        min-height: 87%;
-        justify-content: flex-start;
+        flex-direction: row;
+        margin: 0px;
+        padding: 0px;
+        border: none;
+        width: 90%;
+        justify-content: space-between;
         align-items: center;
+        max-width: none;
+        min-height: 150px;
+        box-sizing: content-box;
+        transition: none;
+        pointer-events: none;
+    }
+    .tarjeta{
+        h3,strong{
+            padding: 20px;
+        }
+        button{
+            margin-right: 20px;
+        }
+    }
+    .tarjeta > p{
+        display: none;
+    }
+
+    .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        background-color: #FF6500;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        color: black;
     }
 
     .tarjeta h3,
     .tarjeta strong {
         font-size: 100%;
+        margin: 0px;
     }   
+    .linea-plan {
+        display: block;
+        border: 1px solid rgb(0, 0, 0);
+        width: 90%;
+    } 
 
     .horarios-dias h2{
         font-size: 50px;
