@@ -570,4 +570,12 @@ h4 {
     text-align: center;
     }
 
+    .promocion > p > strong{
+        font-size: 80%;
+    }
+
+    .descripcion > .texto > h2{
+        font-size: 120%;
+    }
+
 }
