@@ -465,12 +465,8 @@ h4 {
         transition: none;
         pointer-events: none;
         text-align: center;
-    }
-    .tarjeta{
-        h3,strong,button{
-            margin-right: 1%;
-        }
-    }
+    } 
+    
     .tarjeta > p{
         display: none;
     }
