@@ -464,10 +464,11 @@ h4 {
         box-sizing: content-box;
         transition: none;
         pointer-events: none;
+        text-align: center;
     }
     .tarjeta{
         h3,strong{
-            padding: 20px;
+            margin-right: 20px;
         }
         button{
             margin-right: 20px;
