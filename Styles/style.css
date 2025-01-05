@@ -466,14 +466,14 @@ h4 {
         pointer-events: none;
         text-align: center;
     }
-    .tarjeta{
+    /* .tarjeta{
         h3,strong{
             margin-right: 20px;
         }
         button{
             margin-right: 20px;
         }
-    }
+    } */
     .tarjeta > p{
         display: none;
     }
