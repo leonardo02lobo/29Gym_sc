@@ -465,8 +465,9 @@ h4 {
         transition: none;
         pointer-events: none;
         text-align: center;
+        font-size: 90%;
     } 
-    
+
     .tarjeta > p{
         display: none;
     }
