@@ -572,10 +572,12 @@ h4 {
 
     .promocion > p > strong{
         font-size: 80%;
+        text-align: center;
     }
 
     .descripcion > .texto > h2{
         font-size: 120%;
+        text-align: center;
     }
 
 }
