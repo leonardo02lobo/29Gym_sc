@@ -327,7 +327,15 @@ h4 {
     display: none;
 }
 
+#div4, #div3, #div2, #div1{ 
+    display: none;
+}
+
 @media (max-width: 480px) {
+
+    .verPc {
+        display: none;
+    }
 
     .presentacion {
         font-size: 200%;
@@ -464,13 +472,24 @@ h4 {
         box-sizing: content-box;
         transition: none;
         pointer-events: none;
-        text-align: center;
-        font-size: 90%;
-    } 
-
-    .tarjeta > p{
-        display: none;
     }
+    .tarjeta{
+        h3,strong{
+            padding: 20px;
+        }
+        button{
+            margin-right: 20px;
+        }
+    }
+
+    #div4, #div3, #div2, #div1{ 
+        display: none;
+        padding: 0px 20px 15px 20px;
+        box-sizing: border-box;
+        margin: 0px;
+        text-align: center;
+    }
+
 
     .info{
         display: flex;
@@ -487,7 +506,7 @@ h4 {
 
     .tarjeta h3,
     .tarjeta strong {
-        font-size: 90%;
+        font-size: 100%;
         margin: 0px;
     }   
     .linea-plan {
@@ -565,14 +584,26 @@ h4 {
     text-align: center;
     }
 
-    .promocion > p > strong{
-        font-size: 80%;
-        text-align: center;
+    .tarjeta-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0px; /* Ajusta el margen según sea necesario */
     }
-
-    .descripcion > .texto > h2{
-        font-size: 120%;
-        text-align: center;
+    
+    .tarjeta {
+        flex: 1;
+        margin-right: 10px; /* Espacio entre la tarjeta y el botón */
+    }
+    
+    .info {
+        flex-shrink: 0;
+        padding: 10px 20px;
+        background-color: transparent;
+        color: black;
+        border: 1px solid #FF6500;
+        cursor: pointer;
+        border-radius: 0px;
     }
 
 }
