@@ -318,16 +318,19 @@ h4 {
     border-radius: 5px;
 }
 
-.paginas2 a{
-    text-decoration: none; 
-    color: inherit; 
+.paginas2 a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.info{
+.info {
     display: none;
 }
 
-#div4, #div3, #div2, #div1{ 
+#div4,
+#div3,
+#div2,
+#div1 {
     display: none;
 }
 
@@ -338,7 +341,7 @@ h4 {
     }
 
     .presentacion {
-        font-size: 200%;
+        font-size: 180%;
         margin: 69% 0%;
     }
 
@@ -438,20 +441,23 @@ h4 {
         background-position: right;
     }
 
-    .paginas2{
+    .paginas2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .container-tarjetas{
+    .container-tarjetas {
         flex-direction: column;
         align-items: center;
     }
-     .planes {
+
+    .planes {
         height: auto;
         width: 100%;
+        padding: 25px;
+        box-sizing: border-box;
     }
 
     .planes h2 {
@@ -459,6 +465,7 @@ h4 {
         text-align: center;
         margin: 10px;
     }
+
     .tarjeta {
         flex-direction: row;
         margin: 0px;
@@ -473,16 +480,23 @@ h4 {
         transition: none;
         pointer-events: none;
     }
-    .tarjeta{
-        h3,strong{
+
+    .tarjeta {
+
+        h3,
+        strong {
             padding: 20px;
         }
-        button{
+
+        button {
             margin-right: 20px;
         }
     }
 
-    #div4, #div3, #div2, #div1{ 
+    #div4,
+    #div3,
+    #div2,
+    #div1 {
         display: none;
         padding: 0px 20px 15px 20px;
         box-sizing: border-box;
@@ -491,7 +505,7 @@ h4 {
     }
 
 
-    .info{
+    .info {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -508,12 +522,13 @@ h4 {
     .tarjeta strong {
         font-size: 100%;
         margin: 0px;
-    }   
+    }
+
     .linea-plan {
         display: block;
         border: 1px solid rgb(0, 0, 0);
         width: 90%;
-    }  
+    }
 
     .horarios-dias h2 {
         font-size: 50px;
@@ -526,6 +541,7 @@ h4 {
         align-items: center;
         width: 100%;
         margin-top: 10%;
+        text-align: center;
         margin-bottom: 0%;
     }
 
@@ -574,28 +590,30 @@ h4 {
         height: 77%;
     }
 
-    .direccion{
-    justify-content: center;
-    text-align: center;
+    .direccion {
+        justify-content: center;
+        text-align: center;
     }
 
-    #WhatsApp{
-    justify-content: center;
-    text-align: center;
+    #WhatsApp {
+        justify-content: center;
+        text-align: center;
     }
 
     .tarjeta-container {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 0px; /* Ajusta el margen según sea necesario */
+        margin-bottom: 0px;
+        /* Ajusta el margen según sea necesario */
     }
-    
+
     .tarjeta {
         flex: 1;
-        margin-right: 10px; /* Espacio entre la tarjeta y el botón */
+        margin-right: 10px;
+        /* Espacio entre la tarjeta y el botón */
     }
-    
+
     .info {
         flex-shrink: 0;
         padding: 10px 20px;
